@@ -41,30 +41,20 @@ This project interacts with the WBA program using Solana's Anchor framework. Her
    yarn install
     ```
 
-3. **Initialize typescript**:
-   ```bash
-   yarn tsc --init
-    ```
-
-4. **Add resolveJsonModule to tsconfig.json to load json files e.g wallet.json**:
-   ```bash
-   "resolveJsonModule": true
-    ```
-
-5. **Generate your wallet.json**:
+3. **Generate your wallet.json**:
    ```bash
    solana-keygen new --outfile wallet.json
     ```
 
-6. **Request SOL using you wallet public key**:
+4. **Request SOL using you wallet public key**:
    Head to https://faucet.solana.com and request SOL
 
-3. **Run the Enrollment Script**:
+5. **Run the Enrollment Script**:
    ```bash
-   ts-node enroll.ts
+   yarn ts-node enroll.ts
     ```
 
-4. **Expected Output**:
+6. **Expected Output**:
    ```bash
    Success! Check out your TX here: https://explorer.solana.com/tx/<transaction-hash>?cluster=devnet
     ```
