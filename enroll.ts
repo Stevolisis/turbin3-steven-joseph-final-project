@@ -1,11 +1,12 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import wallet from "./wallet.json";
+import new_wallet from "./wallet.json";
 import { AnchorProvider, Program, Wallet } from "@coral-xyz/anchor";
 import { IDL, WbaPrereq } from "./programs/wba_prereq";
 
-const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
+const keypair = Keypair.fromSecretKey(new Uint8Array(new_wallet));
 const connection = new Connection("https://api.devnet.solana.com");
 const github = Buffer.from("Stevolisis");
+console.log("PublicKey: ", keypair.publicKey);
 
 //Anchor
 const provider = new AnchorProvider(connection, new Wallet(keypair), { commitment: "confirmed" });

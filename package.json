@@ -10,5 +10,9 @@
     "@coral-xyz/anchor": "0.30.0",
     "@solana/web3.js": "1.91.8",
     "rpc-websockets": "7.11.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
